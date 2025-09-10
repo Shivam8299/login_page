@@ -14,7 +14,7 @@ const links = [
 
 const Header: FC = () => {
   return (
-    <div className="w-full rounded-xl bg-gradient-to-r from-[#0d1f3a] to-[#1b2e4a] text-white px-6 py-3 flex justify-between items-center shadow-md">
+    <div className="w-full rounded-xl bg-[linear-gradient(127deg,rgb(14,28,41)_-68%,rgb(50,61,104)_100%)] text-white px-6 py-3 2xl:py-5 flex justify-between items-center shadow-md">
       {/* Left Side */}
       <div>
         <h2 className="text-base font-semibold">

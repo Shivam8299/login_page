@@ -49,35 +49,35 @@ export default function DashboardCards() {
   ];
 
   return (
-    <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 p-2  ">
+    <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 p-2  ">
       {cards.map(({ id, title, description, value, icon: Icon, stats }) => ( 
         <div
           key={id}
-          className="h-30 px-4 pt-4 rounded-xl shadow-md transition border border-gray-100 bg-gray-50"
+          className="h-35 2xl:h-37  px-4 pt-4 rounded-xl shadow-md transition border border-gray-100 bg-[#F0F8FFE6]"
         >
           {/* Header */}
           <div className="flex items-center justify-between pb-1 border-b border-gray-300">
             <div className="flex items-center gap-2">
-              <div className="w-7 h-7 flex items-center justify-center rounded-md bg-gray-100">
-                <Icon className="w-4 h-4 text-gray-600" />
+              <div className="w-7 h-7 2xl:w-9 2x:h-9 flex items-center justify-center rounded-md bg-[#F0F8FFE6] shadow-lg">
+                <Icon className="w-4 h-4 2xl:w-6 2x:h-6  text-gray-600" />
               </div>
               <div>
-                <h2 className="text-sm font-semibold text-gray-800">{title}</h2>
-                <p className="text-xs text-gray-500">{description}</p>
+                <h2 className="text-sm 2xl:text-base font-semibold text-gray-800">{title}</h2>
+                <p className="text-xs 2xl:text-sm text-gray-500">{description}</p>
               </div>
             </div>
-            <span className="text-lg font-bold text-gray-800">{value}</span>
+            <span className="text-lg 2xl:text-xl font-bold text-gray-800">{value}</span>
           </div>
 
           {/* Stats */}
           <div className="mt-3 space-y-1 ">
             {stats.map(({ label, value, change }, i) => (
-              <div key={i} className="flex justify-between text-xs">
+              <div key={i} className="flex justify-between text-xs 2xl:text-sm">
                 <span className="text-gray-600">{label}:</span>
                 <span className="text-gray-800 flex items-center gap-1">
                   {value}
                   {change && (
-                    <span className="text-green-600 text-xs font-medium">
+                    <span className="text-green-600 text-xs 2xl:text-sm font-medium">
                       {change}
                     </span>
                   )}

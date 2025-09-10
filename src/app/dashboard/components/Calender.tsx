@@ -57,14 +57,17 @@ const CalendarUI: React.FC = () => {
 //   };
 
   return (
-    <div className="p-4 bg-gray-50 rounded-2xl shadow-md">
+    <div className="p-5 2xl:p-7 bg-[#F0F8FFE6] rounded-2xl shadow-md">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2">
-          <Calendar className="text-blue-500" />
+        <div className="flex items-center gap-2 ">
+          <div className="p-2 bg-[#ffffff] rounded-lg shadow-md">
+            <Calendar size={25} className="text-gray-600" />
+          </div>
+         
           <div>
-            <h2 className="font-semibold text-lg">Interactive Calendar</h2>
-            <p className="text-gray-500 text-sm">Manage deadlines and important events</p>
+            <h2 className="font-semibold text-lg 2xl:text-xl">Interactive Calendar</h2>
+            <p className="text-gray-500 text-sm 2xl:text-sm">Manage deadlines and important events</p>
           </div>
         </div>
         <div className="flex items-center gap-4">
@@ -95,7 +98,7 @@ const CalendarUI: React.FC = () => {
           return (
             <div
               key={day}
-              className={`h-9 flex flex-col justify-center items-center  border cursor-pointer hover:bg-gray-100 ${
+              className={`h-9 2xl:h-11 flex flex-col justify-center items-center  border cursor-pointer hover:bg-gray-100 ${
                 today.getDate() === day &&
                 today.getMonth() === currentMonth &&
                 today.getFullYear() === currentYear
@@ -103,7 +106,7 @@ const CalendarUI: React.FC = () => {
                   : "border-gray-200"
               }`}
             >
-              <span className="text-xs font-medium">{day}</span>
+              <span className="text-xs 2xl:text-sm font-medium">{day}</span>
               {/* {event && (
                 <div
                   className={`mt-1 w-1 h-1 rounded-full ${priorities[event.priority]}`}
@@ -118,18 +121,18 @@ const CalendarUI: React.FC = () => {
       {/* Priority Legend */}
       <div className="flex justify-between border-t mt-2 pt-3 border-gray-400 text-sm text-gray-600 ">
         <div className="flex gap-4">
-            <div className="flex items-center gap-1 text-xs">
+            <div className="flex items-center gap-1 text-xs 2xl:text-sm">
           <span className="w-2 h-2 rounded-full bg-red-500"></span> High Priority
         </div>
-        <div className="flex items-center gap-1 text-xs">
+        <div className="flex items-center gap-1 text-xs 2xl:text-sm">
           <span className="w-2 h-2 rounded-full bg-orange-500"></span> Medium Priority
         </div>
-        <div className="flex items-center gap-1 text-xs">
+        <div className="flex items-center gap-1 text-xs 2xl:text-sm">
           <span className="w-2 h-2 rounded-full bg-green-500"></span> Low Priority
         </div>
         </div>
         <div>
-            <p className="text-gray-500 text-xs"> 6 total events</p>
+            <p className="text-gray-500 text-xs 2xl:text-sm"> 6 total events</p>
         </div>
       </div>
     </div>
