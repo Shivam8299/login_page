@@ -13,8 +13,8 @@ export default function Navbar() {
           </div>
           <span className="font-semibold text-lg 2xl:text-2xl">QuickBid</span>
         </div>
-        <div className=" hidden lg:flex justify-center items-center  gap-1 ">
-          <div className="flex px-6 py-2 rounded-t-md border-b-2 border-white  gap-1 bg-[linear-gradient(127deg,rgb(14,28,41)_-68%,rgb(50,61,104)_100%)] text-white justify-center items-center " >
+        <div className=" hidden lg:flex justify-center cursor-pointer items-center  gap-1 ">
+          <div className="flex px-6 py-2  rounded-t-md border-b-2 border-white  gap-1 bg-[linear-gradient(127deg,rgb(14,28,41)_-68%,rgb(50,61,104)_100%)] text-white justify-center items-center " >
             <FolderClosed size={14} />
             <span className="text-sm 2xl:text-base ">Organize</span>
           </div>
@@ -30,9 +30,9 @@ export default function Navbar() {
       </div>
       {/* Right Side */}
       <div className="flex gap-4 justify-center items-center">
-        <input className="w-60 p-[6px] outline-none border border-gray-300 rounded-md text-xs 2xl:text-base " placeholder="Search Tender and Document" />
-        <Bell className="p-1 rounded-full border border-gray-300" size={23}/>
-        <LogIn className="p-1 rounded-full border border-gray-300" size={23}/>
+        <input className="w-60 p-[6px] outline-none border border-gray-400 rounded-md text-xs 2xl:text-base " placeholder="Search Tender and Document" />
+        <Bell className="p-1 rounded-full border cursor-pointer border-gray-400" size={23}/>
+        <LogIn className="p-1 rounded-full border cursor-pointer border-gray-400" size={23}/>
       </div>
     </div>
   );

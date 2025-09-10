@@ -28,7 +28,7 @@ function ActivityCard({ icon: Icon, title, description, status, time, details }:
       {/* Content */}
       <div className="flex-1 ">
         <div className="flex justify-between items-center ">
-          <h3 className="font-medium text-gray-800 text-sn">{title}</h3>
+          <h3 className="font-medium text-[#0E1C29] text-sn">{title}</h3>
           <div className="flex  flex-row gap-2 ">
             <div className=" text-green-600  flex justify-center items-center gap-[2px]  text-[10px] font-medium">
                 <div className="w-1 h-1 rounded-full bg-green-500"></div>
@@ -91,7 +91,7 @@ export default function RecentActivities() {
   return (
     <div className="bg-[#F0F8FFE6] p-4 rounded-xl w-full shadow-md lg:w-[35%]">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="font-medium text-gray-800">Recent Organize Activities</h2>
+        <h2 className="font-medium text-[#0E1C29]">Recent Organize Activities</h2>
         <button className="text-xs bg-[linear-gradient(127deg,rgb(14,28,41)_-68%,rgb(50,61,104)_100%)] text-white px-4 py-2 rounded-md">
           View All
         </button>

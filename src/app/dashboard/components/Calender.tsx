@@ -61,12 +61,12 @@ const CalendarUI: React.FC = () => {
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2 ">
-          <div className="p-2 bg-[#ffffff] rounded-lg shadow-md">
+          <div className="p-2 bg-[#F0F8FFE6] rounded-lg shadow-md">
             <Calendar size={25} className="text-gray-600" />
           </div>
          
           <div>
-            <h2 className="font-semibold text-lg 2xl:text-xl">Interactive Calendar</h2>
+            <h2 className="font-semibold text-lg 2xl:text-xl text-[#0E1C29]">Interactive Calendar</h2>
             <p className="text-gray-500 text-sm 2xl:text-sm">Manage deadlines and important events</p>
           </div>
         </div>

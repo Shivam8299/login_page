@@ -9,12 +9,12 @@ export default function Page () {
     return(
         <div className="max-w-[2000px] bg-gray-white m-auto min-h-screen bg-gray-50">
             <Navbar/>
-           <div className="flex p-2 ">
+           <div className="flex  ">
              <Sidebar/>
-            <div className=" w-full flex flex-col  gap-2 px-2">
+            <div className=" w-full flex flex-col  gap-1 p-2">
                 <Header/>
                 <DashboardCards/>
-                <div className="w-full p-3 flex gap-3">
+                <div className="w-full  flex gap-3">
                     <div className="w-[65%]">
                         <Calendar/>
                     </div>

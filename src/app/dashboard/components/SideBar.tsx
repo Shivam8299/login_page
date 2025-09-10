@@ -3,7 +3,7 @@ import SidebarItem from "./SidebarItem";
 
 export default function Sidebar() {
   return (
-    <aside className="w-65 bg-gray-50 border-r border-gray-200 flex flex-col justify-between ">
+    <aside className="w-65 bg-[#F0F8FFE6] border-r border-gray-200 flex flex-col justify-between ">
       <div>
         
         <div className="text-sm text-gray-700 font-medium px-4   mt-1 uppercase">Organize</div>
